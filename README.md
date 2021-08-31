@@ -1,4 +1,4 @@
-# ngx_stub_status_prometheus
+# nginx-module-status-exporter
 
 This is an nginx module that provides the same information as the standard <a href="http://nginx.org/en/docs/http/ngx_http_stub_status_module.html">stub_status module</a> but in a format recognized by the <a href="http://prometheus.io">prometheus</a> time-series database.
 

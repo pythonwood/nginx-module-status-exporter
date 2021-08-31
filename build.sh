@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NGINX_VERSION=1.9.3
+NGINX_VERSION=1.20.1
 
 pushd "nginx-$NGINX_VERSION"
 # General configuration options are as suggested by the book:
@@ -10,9 +10,8 @@ CFLAGS="-O2" ./configure            \
     --conf-path=/etc/nginx          \
     --add-module=../                \
     --with-http_ssl_module          \
-    --with-http_spdy_module         \
     --with-http_realip_module       \
-    --with-http_stub_status_module 
+    --with-http_stub_status_module
 make
 make install
 popd
